@@ -6,4 +6,8 @@ Homepage - {{ block.super }}
 <h1>Hello World!</h1>
 <p>This is where the party begins</p>
 <p>They told me to keep it simple...</p>
+{% for party in partys %}
+<h2>{{ party.name }}</h2>
+<p>{{ party.description }}</p>
+{% endfor %}
 {% endblock content %}
